@@ -115,9 +115,11 @@ public class Bank {
         // Create Bank Accounts
         BankAccount account1 = new BankAccount("John Doe", BankAccount.BankAccountType.CHECKINGS);
         System.out.println("Bank account for John Doe created");
+        totalAccounts++;
 
         BankAccount account2 = new BankAccount("Jony Ive", BankAccount.BankAccountType.STUDENT);
         System.out.println("Bank account for Johy Ive created\n\n");
+        totalAccounts++;
 
         // Deposit money to both accounts and print new balance
         bank.depositMoney(account1, 1000.0);
